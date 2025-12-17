@@ -1,0 +1,22 @@
+# Students Terraform Configuration
+# Copy to terraform.tfvars and fill in values
+
+aws_region   = "us-east-2"
+cluster_name = "lenses-training"
+domain_name  = "lenses.training"
+
+# From foundation terraform output
+acm_certificate_arn = "arn:aws:acm:us-east-2:XXXXXXXXXXXX:certificate/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+route53_zone_id     = "Z0XXXXXXXXXXXXXXXXX"
+
+# Number of student environments (1-15)
+num_students = 15
+
+# Lenses license key (will expire, update as needed)
+lenses_license = "license_key_XXXXXXXX..."
+
+# PostgreSQL password (same for all environments)
+postgres_password = "lenses123"
+
+# Key pair name for mcp server
+key_pair_name = "training-terraform"
